@@ -1,12 +1,57 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+.desktop{
+    display: none;
+}
+
+:root{
+    --top-color: rgb(212, 208, 208);
+    --top-text-color: rgb(22, 33, 132);
+}
+
+.desktop{
+    display: none;
+}
+
+.top-desktop a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 20px;
+}
+
+.top-desktop ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    column-gap: 10px;
+    margin-right: 10px;
+}
+
+.top-desktop{
+    display: block;
+    position: absolute;
+    background-color: var(--top-color);
+    color: var(--top-text-color);
+    height: 10%;
+    width: 100%;
+}
+
+.container-desktop{
+    display: flex;
+}
 
 @media screen and (min-width: 760px){
     .mobile{
         display: none;
+    }
+
+    .desktop{
+        display: flex;
     }
 }
 
