@@ -9,7 +9,7 @@
 :root{
     --top-text-color: rgb(255, 255, 255);
     --top-color: rgb(47, 59, 162);
-    --border-input-color: rgb(231, 225, 225);
+    --fundo-color: rgb(207, 207, 207);
 }
 
 .desktop{
@@ -47,9 +47,48 @@
     display: flex;
     margin-top: 8%;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-around;
 }
+
+.Defendi-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 700px;
+    width: 500px;
+}
+
+.Menegasso-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 700px;
+    width: 500px;
+}
+
+.Brizola-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 700px;
+    width: 500px;
+}
+
+h2{
+    text-align: center;
+}
+
+
 
 @media screen and (min-width: 760px){
     .mobile{
