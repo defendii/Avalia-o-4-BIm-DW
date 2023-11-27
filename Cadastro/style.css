@@ -36,7 +36,7 @@
 
 .top-desktop{
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: var(--top-color);
     color: var(--top-text-color);
     height: 10%;
@@ -44,8 +44,10 @@
 }
 
 .container-desktop{
+    background-image: url(../Imagens/nordeste-praias-bonitas.jpg);
     display: flex;
-    margin-top: 8%;
+    margin-top: 4.5%;
+    height: 100%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -73,6 +75,16 @@
     justify-content: space-between;
 }
 
+.logo-pas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
 
 button{
     font-family: 'Poppins', sans-serif;
@@ -98,6 +110,6 @@ button{
 h1{
     margin-bottom: 10px;
     color: var(--top-color);
-    text-align: center;
+    /* text-align: center; */
 }
 

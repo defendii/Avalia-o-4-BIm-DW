@@ -47,45 +47,59 @@
     display: flex;
     margin-top: 8%;
     width: 100%;
-    /* align-items: center; */
+    /* height: 90%; */
     justify-content: space-around;
+}
+
+.container-desktop ul{
+    list-style: none;
 }
 
 .Defendi-desktop{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--fundo-color);
     border-radius: 15px;
-    height: 700px;
-    width: 500px;
+    height: 100%;
+    width: 30%;
 }
 
 .Menegasso-desktop{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--fundo-color);
     border-radius: 15px;
-    height: 700px;
-    width: 500px;
+    height: 100%;
+    width: 30%;
 }
 
 .Brizola-desktop{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--fundo-color);
     border-radius: 15px;
-    height: 700px;
-    width: 500px;
+    height: 100%;
+    width: 30%;
 }
 
 h2{
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.foto{
+    width: 83%;
+    height: 60%;
+    border-radius: 10px;
 }
 
 
