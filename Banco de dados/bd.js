@@ -5,7 +5,7 @@ function menu(){
 
     if(menuMobile.style.left == '-100%'){
         menuMobile.style.left = '0%';
-        imgMenu.src = "../Imagens/close.png"
+        imgMenu.src = "../Imagens/close.svg"
     }
     else{
         menuMobile.style.left = '-100%'
