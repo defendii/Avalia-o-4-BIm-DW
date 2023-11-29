@@ -9,6 +9,6 @@ function menu(){
     }
     else{
         menuMobile.style.left = '-100%'
-        imgMenu.src = "../Imagens/menu.png"
+        imgMenu.src = "../Imagens/menu.svg"
     }
 }
