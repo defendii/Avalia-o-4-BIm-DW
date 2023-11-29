@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="../Imagens/aviao.png">
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Cadastro</title>
 </head>
@@ -15,7 +16,10 @@
 
     <div class="mobile">
         
-        <div class="top-mobile">
+        <div class="menu-icon" onclick="menu()">
+            <img src="../Imagens/menu.png" id="imgMenu" alt=""></div>
+
+        <div class="lista-mobile">
             <ul>
                 <li><a href="">Banco de Dados</a></li>
                 <li><a href="../Alunos/alunos.html">Alunos</a></li>
@@ -28,17 +32,18 @@
 
         <div class="container-mobile">
             <form method="post" action="" onsubmit="">
+
                 <label>ID Passagem</label>
                 <input type="text" placeholder="Insira o id da passagem"></input> <br> <br>
 
                 <label>Duração do voo</label>
-                <input type="text" placeholder="Insira a duração do voo"></input> <br> <br>
+                <input type="time" placeholder="Insira a duração do voo"></input> <br> <br>
 
                 <label>Data de embarque</label>
-                <input type="text" placeholder="Insira a data do embarque"></input> <br> <br>
+                <input type="date" placeholder="Insira a data do embarque"></input> <br> <br>
 
                 <label>Data de retorno</label>
-                <input type="text" placeholder="Insira a data de retorno"></input> <br> <br>
+                <input type="date" placeholder="Insira a data de retorno"></input> <br> <br>
 
                 <label>Destino</label>
                 <input type="text" placeholder="Insira o destino"></input> <br> <br>
@@ -46,8 +51,13 @@
                 <label>Origem</label>
                 <input type="text" placeholder="Insira a cidade de origem"></input> <br> <br>
 
-                <label>Classe do voo</label>
-                <input type="text" placeholder="Insira a classe do voo"></input> <br> <br>
+                <label>Classe do voo</label> <br>
+                    <select name="classe" id="classe">
+                        <option value="economica">Econômica</option>
+                        <option value="premium">Premium</option>
+                        <option value="executiva">Executiva</option>
+                        <option value="primeira">Primeira Classe</option>
+                    </select> <br> <br>
                 
                 <div class="irtabela-mobile"><button type="submit">Ir para a tabela</button></div>
                 <div class="enviar-mobile"><button type="submit">Enviar</button></div>
