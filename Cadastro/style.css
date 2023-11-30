@@ -18,7 +18,7 @@
     font-family:'Poppins', sans-serif;
     width: 100%;
     height: 100%;
-    font-size: 1.rem;
+    font-size: 15px;
 }
 
 .menu-icon{
@@ -33,8 +33,8 @@
 }
 
 .menu-icon img {
-    width: 40px;
-    margin: 10px;
+    width: 20px;
+    margin: 5px;
 }
 
 .lista-mobile{
@@ -75,28 +75,56 @@
 }
 
 .container-mobile input{
-    width: 400px;
+    width: 200px;
     border-radius: 5px;
     border: none;
-    height: 30px;
+    height: 20px;
 }
 
 .cor-mobile{
-    width: 450px;
+    width: 300px;
     height: 800px;
     background-color: var(--fundo-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    justify-items: center;
     border-radius: 10px;
 }
 
 .botoes-mobile{
     display: flex;
     justify-content: space-between;
+
 }
 
+h1{
+    font-size: 20px;
+}
 
+.logo-mobile{
+    width: 80px;
+    height: 80px;
+}
+
+.select-mobile{
+    color: var(--cinza-escuro-color);
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--top-color);
+    color: var(--top-text-color);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
 
 /* DESKTOP */
 
@@ -176,15 +204,6 @@
     width: 100px;
 }
 
-button{
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--top-color);
-    color: var(--top-text-color);
-    border: none;
-    border-radius: 5px;
-    width: 150px;
-    height: 40px;
-}
 
 select{
     color: var(--cinza-escuro-color);
@@ -203,6 +222,16 @@ select{
     .desktop{
         display: flex;
     }
+
+    button{
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--top-color);
+        color: var(--top-text-color);
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+        height: 40px;
+    }
 }
 
 h1{
@@ -210,4 +239,3 @@ h1{
     color: var(--top-color);
     /* text-align: center; */
 }
-
