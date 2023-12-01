@@ -29,6 +29,7 @@
     flex-direction: row;
     align-content: center;
     justify-content: flex-end;
+
 }
 
 .menu-icon img {
@@ -38,12 +39,12 @@
 
 .lista-mobile{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 100px;
+    height: 90%;
+    top: 10%;
     left: -100%;
     transition: 0.4s;
     background-color:var(--top-color);
+    position: fixed;
 }
 
 .lista-mobile a{
