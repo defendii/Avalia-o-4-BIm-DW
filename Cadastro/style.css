@@ -11,6 +11,8 @@
     --top-color: rgb(47, 59, 162);
     --fundo-color: rgb(207, 207, 207);
     --cinza-escuro-color: rgb(127, 124, 124);
+    --top-color-dark: #1b263b;
+    --fundo-color-dark: #0d1b2a
 }
 
 .mobile{
@@ -161,7 +163,66 @@ button{
     color: var(--top-text-color);
     height: 10%;
     width: 100%;
+    transition: .5s;
 }
+
+.trilho{
+    width: 100px;
+    height: 50px;
+    background-color: var(--cinza-escuro-color);
+    border-radius: 150px;
+    position: relative;
+}
+
+.trilho .indicador{
+    background-color: var(--fundo-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: var(--fundo-color);
+}
+
+.trilho.dark .indicador{
+    left: 50px;
+    background-color: var(--cinza-escuro-color);
+
+}
+
+.cor-desktop.dark{
+    background-color: var(--fundo-color-dark);
+}
+
+.top-desktop.dark{
+    background-color: var(--top-color-dark);
+}
+
+.passagem.dark{
+    color: var(--top-text-color);
+}
+
+.dark .passagem,
+.dark label {
+    color: var(--top-text-color);}
+
+.dark.botoes-desktop button {
+    background-color: var(--top-color-dark);
+}
+
+.container-desktop.dark{
+    background-image: url(../Imagens/praia_noite.jpg);
+}
+
+
+
+
 
 .container-desktop{
     background-image: url(../Imagens/nordeste-praias-bonitas.jpg);
