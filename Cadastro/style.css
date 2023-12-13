@@ -175,7 +175,7 @@ button{
 
 .cor-desktop{
     width: 450px;
-    height: 800px;
+    height: 90%;
     background-color: var(--fundo-color);
     display: flex;
     justify-content: center;
