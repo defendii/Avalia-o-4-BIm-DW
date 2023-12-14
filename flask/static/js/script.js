@@ -40,16 +40,8 @@ trilho.addEventListener('click', ()=>{
 function validaRegisterForm() {
     const form = document.getElementById("register-form");
     const idpassagem = form.elements['idpassagem'].value;
-    // const duracao = form.elements['duracao'].value;
-    // const dataembarque = form.elements['dataembarque'].value;
-    // const dataretorno = form.elements['dataretorno'].value;
-    // const destino = form.elements['destino'].value;
-    // const origem = form.elements['origem'].value;
-    // const classe = form.elements['classe'].value;
     console.log(idpassagem, duracao, dataembarque, dataretorno, destino, origem, classe);
-    if (idpassagem !== '' 
-    // && duracao !== '' && dataembarque !== '' && dataretorno !== '' && destino !== '' && origem !== '' && classe !== ''
-    ) {
+    if (idpassagem !== '' ) {
         alert('Dados cadastrados');
         form.reset();
     } else {
