@@ -12,7 +12,8 @@
     <div class="mobile">
         <div class="menu-mobile">
             <div class="menu-icon" onclick="menu()">
-                <img src="{{ url_for('static', filename='Imagens/menu.svg') }}" id="imgMenu" alt=""></div>
+                <img src="{{ url_for('static', filename='Imagens/menu.svg') }}" id="imgMenu" alt="">
+            </div>
     
             <div class="lista-mobile">
                 <ul>
@@ -66,7 +67,7 @@
 
         </div>
 
-        <img class="logo-mobile" src="../Imagens/logo1.png" alt="">
+        <img class="logo-mobile" src="{{ url_for('static', filename='Imagens/logo1.png') }}" alt="">
 
     </div>
 
