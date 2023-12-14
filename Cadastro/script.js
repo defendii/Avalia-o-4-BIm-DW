@@ -13,6 +13,8 @@ function menu() {
     }
 }
 
+
+
 let trilho = document.getElementById('trilho')
 let corDesktop = document.querySelector(".cor-desktop")
 let topDesktop = document.querySelector(".top-desktop")
@@ -20,6 +22,7 @@ let passagem = document.querySelector(".passagem")
 let labels = document.querySelectorAll("label")
 let botoes = document.querySelectorAll(".botoes-desktop")
 let containerDesktop = document.querySelector(".container-desktop")
+
 
 trilho.addEventListener('click', ()=>{
     trilho.classList.toggle('dark')
