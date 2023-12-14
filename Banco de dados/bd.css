@@ -6,22 +6,23 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --top-text-color: rgb(255, 255, 255);
     --top-color: rgb(47, 59, 162);
     --fundo-color: rgb(207, 207, 207);
-    --color-box: #5353ec;
+    --color-box: #0f4c8d;
+    --color-box-table: #4f8699;
 }
 
-.mobile{
+.mobile {
     display: flex;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100%;
     font-size: 1.rem;
 }
 
-.menu-icon{
+.menu-icon {
     position: fixed;
     width: 100%;
     height: 10%;
@@ -37,24 +38,24 @@
     margin: 5px;
 }
 
-.lista-mobile{
+.lista-mobile {
     width: 100%;
     height: 90%;
     top: 10%;
     left: -100%;
     transition: 0.4s;
-    background-color:var(--top-color);
+    background-color: var(--top-color);
     position: fixed;
 }
 
-.lista-mobile a{
+.lista-mobile a {
     text-decoration: none;
     color: var(--top-text-color);
     font-size: 15px;
 
 }
 
-.lista-mobile ul{
+.lista-mobile ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -62,10 +63,10 @@
     align-items: center;
     gap: 30px;
     height: 100%;
-    
+
 }
 
-.desktop{
+.desktop {
     width: 100%;
     height: 100%;
     display: none;
@@ -79,7 +80,7 @@
     font-size: 20px;
 }
 
-.top-desktop ul{
+.top-desktop ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -88,7 +89,7 @@
     margin-right: 10px;
 }
 
-.desktop{
+.desktop {
     display: block;
     position: fixed;
     background-color: var(--top-color);
@@ -96,20 +97,47 @@
     width: 100%;
 }
 
-h1,p{
+h1,
+p {
     text-align: center;
     color: white;
 }
 
 .content-box {
-    margin: 20px; 
+    margin: 20px;
     padding: 20px;
-    border: 1px solid none ;
-    background-color: var(--color-box); 
+    border: 1px solid none;
+    background-color: var(--color-box);
     box-sizing: border-box;
     border-radius: 10px;
 }
 
-.tabelas{
-    color: #5353ec;
+.tabelas {
+    color: var(--top-color);
+}
+
+.container {
+    display: flex;
+}
+
+.container>div {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color-box-table);
+
+}
+
+.logo {
+    
+    display: block;
+    margin: 0 auto;
+    
+}
+
+body{
+    background-color: #e1e6d3;
 }
