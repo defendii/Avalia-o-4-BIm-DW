@@ -217,7 +217,7 @@ button{
 }
 
 .container-desktop.dark{
-    background-image: url('../static/imagens/praia_noite.jpg');
+    background-image: url("{{ url_for('static', filename='imagens/praia_noite.jpg') }}");
 }
 
 
