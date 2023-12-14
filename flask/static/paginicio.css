@@ -28,10 +28,6 @@ h1{
     font-size: 1.rem;
 }
 
-/* .menu-mobile{
-    display: block;
-} */
-
 .menu-icon {
     position: fixed;
     width: 100%;
@@ -41,7 +37,9 @@ h1{
     flex-direction: row;
     align-content: center;
     justify-content: flex-end;
+    z-index: 1;
 }
+
 .menu-icon img {
     width: 20px;
     margin: 5px;
