@@ -10,7 +10,8 @@
     --top-text-color: rgb(255, 255, 255);
     --top-color: rgb(47, 59, 162);
     --fundo-color: rgb(207, 207, 207);
-    --top-color-h1: rgb(21, 27, 88);
+    --color-box: #0f4c8d;
+    --color-box-table: #4f8699;
 }
 
 .mobile {
@@ -146,101 +147,92 @@ h1, p {
 
 
 
-.desktop{
+.desktop {
     width: 100%;
     height: 100%;
     display: none;
     font-family: 'Poppins', sans-serif;
+
 }
 
-.top-desktop a{
+.top-desktop a {
     text-decoration: none;
     color: var(--top-text-color);
     font-size: 20px;
 }
 
-.top-desktop ul{
+.top-desktop ul {
     display: flex;
     justify-content: flex-end;
-    align-content: center;
+    align-items: center;
     list-style: none;
     column-gap: 10px;
     margin-right: 10px;
 }
 
-.top-desktop{
-    display: block;
+.desktop {
+    display: none;
     position: fixed;
     background-color: var(--top-color);
-    color: var(--top-text-color);
     height: 10%;
     width: 100%;
 }
 
-.container-desktop{
-    margin-top: 6%;
-    height: 100%;
-    width: 90%;
+h1,
+p {
+    text-align: center;
+    color: white;
 }
 
-.content-box{
-    display: flex;
-    align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 8%;
-    height: 100%;
-    flex-direction: column;
-}
-
-.cor-desktop{
-    width: 450px;
-    height: 90%;
-    background-color: var(--fundo-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content-desktop {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid none;
+    background-color: var(--color-box);
+    box-sizing: border-box;
     border-radius: 10px;
 }
 
-.logo-pas{
+.tabelas-desktop{
+    color: var(--top-color);
+}
+
+.container-desktop{
     display: flex;
-    justify-content: center;
 }
 
-.logo{
-    height: 100px;
-    width: 100px;
+.container-desktop>div {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color-box-table);
+
 }
 
-.tabelas{
-    color: var(--top-color-h1);
+.logo-desktop{
+    
+    display: block;
+    margin: 0 auto;
+    
 }
 
-/* .select-desktop{
-    color: var(--cinza-escuro-color);
-    border: none;
-    border-radius: 5px;
-    width: 400px;
-    height: 40px;
-    background-color: var(--top-text-color);
-} */
+body{
+    background-color: #e1e6d3;
+}
 
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 760px){
     .mobile {
         display: none;
     }
 
-    .desktop{
-        display: flex;
+    .menu-mobile{
+        display: none;
     }
-
-    h1{
-        margin-bottom: 10px;
-        color: var(--top-color);
-        /* text-align: center; */
+    .desktop{
+        display: block;
     }
 }
-
-
