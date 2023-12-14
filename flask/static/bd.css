@@ -10,17 +10,23 @@
     --top-text-color: rgb(255, 255, 255);
     --top-color: rgb(47, 59, 162);
     --fundo-color: rgb(207, 207, 207);
+    --top-color-h1: rgb(21, 27, 88);
 }
 
-.mobile{
-    display: flex;
-    font-family:'Poppins', sans-serif;
+.mobile {
+    /* display: flex; */
+    display: block;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100%;
     font-size: 1.rem;
 }
 
-.menu-icon{
+.menu-mobile{
+    display: block;
+}
+
+.menu-icon {
     position: fixed;
     width: 100%;
     height: 10%;
@@ -30,30 +36,25 @@
     align-content: center;
     justify-content: flex-end;
 }
-
 .menu-icon img {
     width: 20px;
     margin: 5px;
 }
-
-.lista-mobile{
+.lista-mobile {
     width: 100%;
-    height: 90%;
+    height: 100%;
     top: 10%;
     left: -100%;
     transition: 0.4s;
-    background-color:var(--top-color);
+    background-color: var(--top-color);
     position: fixed;
 }
-
-.lista-mobile a{
+.lista-mobile a {
     text-decoration: none;
     color: var(--top-text-color);
     font-size: 15px;
-
 }
-
-.lista-mobile ul{
+.lista-mobile ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -61,11 +62,87 @@
     align-items: center;
     gap: 30px;
     height: 100%;
-    
+
 }
 
 
+h1, p {
+    text-align: center;
+}
 
+.content-mobile {
+    margin: 5%;
+    padding: 5%;
+    border: 1px solid none;
+    background-color: var(--color-box);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.tabelas-mobile{
+    color: var(--top-color);
+}
+
+.container-mobile{
+    display: flex;
+}
+
+.user{
+    flex: 1;
+    margin: 5%;
+    padding: 10%;
+    border: 1px solid none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color-box-table);
+
+}
+
+.cidade{
+    flex: 1;
+    margin: 5%;
+    padding: 10%;
+    border: 1px solid none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color-box-table);
+
+}
+
+.passagem{
+    flex: 1;
+    margin: 5%;
+    padding: 10%;
+    border: 1px solid none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color-box-table);
+
+}
+
+.destino{
+    flex: 1;
+    margin: 5%;
+    padding: 10%;
+    border: 1px solid none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color-box-table);
+
+}
+
+.container-mobile{
+    flex-wrap: wrap;
+}
+
+.logo-mobile{
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+/* DESKTOP */
 
 
 
@@ -101,13 +178,19 @@
 }
 
 .container-desktop{
-    background-image: url(../Imagens/nordeste-praias-bonitas.jpg);
-    display: flex;
-    margin-top: 4.5%;
+    margin-top: 6%;
     height: 100%;
-    width: 100%;
+    width: 90%;
+}
+
+.content-box{
+    display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 8%;
+    height: 100%;
+    flex-direction: column;
 }
 
 .cor-desktop{
@@ -120,22 +203,9 @@
     border-radius: 10px;
 }
 
-.container-desktop input{
-    width: 400px;
-    border-radius: 5px;
-    border: none;
-    height: 40px;
-}
-
-.botoes-desktop{
-    display: flex;
-    justify-content: space-between;
-}
-
 .logo-pas{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -143,15 +213,18 @@
     width: 100px;
 }
 
+.tabelas{
+    color: var(--top-color-h1);
+}
 
-.select-desktop{
+/* .select-desktop{
     color: var(--cinza-escuro-color);
     border: none;
     border-radius: 5px;
     width: 400px;
     height: 40px;
     background-color: var(--top-text-color);
-}
+} */
 
 
 @media screen and (min-width: 760px) {
@@ -163,19 +236,11 @@
         display: flex;
     }
 
-    button{
-        font-family: 'Poppins', sans-serif;
-        background-color: var(--top-color);
-        color: var(--top-text-color);
-        border: none;
-        border-radius: 5px;
-        width: 150px;
-        height: 40px;
+    h1{
+        margin-bottom: 10px;
+        color: var(--top-color);
+        /* text-align: center; */
     }
 }
 
-h1{
-    margin-bottom: 10px;
-    color: var(--top-color);
-    /* text-align: center; */
-}
+

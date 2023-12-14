@@ -109,6 +109,9 @@
                 <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
                 <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
                 <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+                <div class="trilho" id="trilho">
+                    <div class="indicador"></div>
+                </div>
             </ul>
         </div>
 
@@ -171,10 +174,8 @@
                         <option value="4">Primeira Classe</option>
                     </select> <br> <br>
 
-                    <div class="botoes-desktop">
-                        <div class="irtabela-desktop"><button type="submit">Ir para a tabela</button></div>
-                        <div class="enviar-desktop"><button  onclick="validaRegisterForm()"  type="submit">Enviar</button></div>
-                    </div>
+                    
+                    <div class="enviar-desktop"><button  onclick="validaRegisterForm()"  type="submit">Enviar</button></div>
 
                 </form>
             </div>
