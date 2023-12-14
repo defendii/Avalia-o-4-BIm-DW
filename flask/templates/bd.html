@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="{{ url_for('static', filename='Imagens/logo1.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='bd.css') }}">
     <script src="{{ url_for('static', filename='js/bd.js') }}" defer></script>
     <title>Banco De Dados</title>
 </head>
 <body>
     <div class="mobile">
-
-        <div class="menu-icon" onclick="menu()">
-            <img src="{{ url_for('static', filename='Imagens/menu.svg') }}" id="imgMenu" alt=""></div>
-
-        <div class="lista-mobile">
-            <ul>
-                <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
-                <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
-                <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
-                <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
-                <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
-            </ul>
+        <div class="menu-mobile">
+            <div class="menu-icon" onclick="menu()">
+                <img src="{{ url_for('static', filename='Imagens/menu.svg') }}" id="imgMenu" alt=""></div>
+    
+            <div class="lista-mobile">
+                <ul>
+                    <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                    <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                    <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                    <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                    <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+                </ul>
+            </div>
         </div>
+        
 
         <div class="content-mobile">
             <h1>Banco de Dados</h1>
