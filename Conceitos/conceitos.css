@@ -65,6 +65,47 @@
     
 }
 
+.container-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 20px auto;
+    margin-top: 10%;
+}
+
+.box-mobile {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: var(--color-box-table);
+    margin-bottom: 10%
+
+}
+
+.box-mobile.full-width {
+    width: 90%;
+    height: 35%;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: #ffffff;
+}
+
+.logo-mobile{
+    
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+
 /* Desktop*/
 
 
@@ -110,6 +151,7 @@
     max-width: 1200px;
     margin: 20px auto;
     margin-top: 100px;
+    gap: 5%;
 }
 
 .box-desktop {
