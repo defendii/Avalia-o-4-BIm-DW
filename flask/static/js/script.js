@@ -5,11 +5,11 @@ function menu(){
 
     if(menuMobile.style.left == '-100%'){
         menuMobile.style.left = '0%';
-        imgMenu.src = "{{ url_for('static', filename='Imagens/close.svg') }}"
+        imgMenu.src = "/static/Imagens/close.svg";
     }
     else{
         menuMobile.style.left = '-100%'
-        imgMenu.src = "{{ url_for('static', filename='Imagens/menu.svg') }}"
+        imgMenu.src = "/static/Imagens/menu.svg";
     }
 }
 
