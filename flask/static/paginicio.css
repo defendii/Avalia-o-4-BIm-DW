@@ -76,11 +76,11 @@ h1{
 .container-mobile{
     display: flex;
     height: 800px;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     flex-direction: column;
-    background-image: url('../static/imagens/aviao.jpg');
-    background-size: contain;
+    background-image: url('../static/imagens/aviao-no-ceu-azul-papel-de-parede-para-celular_155027-322\ \(1\).avif');
+    background-size: 100% 100%;
 }
 
 .container-mobile h1{
@@ -93,6 +93,7 @@ h1{
 
 body{
     height: 100%;
+    width: 100%;
 }
 
 .desktop{
