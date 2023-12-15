@@ -3,7 +3,7 @@ from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 from sqlalchemy import create_engine
 
 
-engine = create_engine('postgresql://postgres:postgres@localhost:5432/dw2')
+engine = create_engine('postgresql://postgres:postgres@localhost:5432/postgres')
 conn = engine.connect()
 print(engine)
 
@@ -43,4 +43,4 @@ passagens = [
 ]
 session.add_all(passagens)
 session.commit()
-session.close() 
+session.close()
