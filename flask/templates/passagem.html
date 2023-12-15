@@ -120,7 +120,7 @@
                 <form id="register-form" method="post" action="{{ url_for('inserir_passagem') }}" >
                     <div class="logo-pas">
                         <img class="logo" src="{{ url_for('static', filename='Imagens/logo1.png') }}" alt="">
-                        <h1>Passagem</h1>
+                        <h1 class='passagem'>Passagem</h1>
                     </div>
 
                     <label>ID Passagem</label><br>
@@ -173,7 +173,7 @@
                         <option value="4">Primeira Classe</option>
                     </select> <br> <br>
 
-                    
+
                     <div class="enviar-desktop"><button  onclick="validaRegisterForm()"  type="submit">Enviar</button></div>
 
                 </form>

@@ -220,7 +220,8 @@ body{
 }
 
 .container-desktop.dark{
-    background-image: url('../static/imagens/praia_noite.jpg');
+    
+    background-image: url('imagens/praia_noite.jpg');
 }
 
 

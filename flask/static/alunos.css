@@ -62,7 +62,7 @@
     align-items: center;
     gap: 30px;
     height: 100%;
-    
+
 }
 .container-mobile{
     display: flex;
@@ -97,7 +97,7 @@
     border-radius: 15px;
     height: 50%;
     width: 90%;
-    
+
 }
 
 .Brizola-mobile{
@@ -250,7 +250,7 @@ h2{
 
 .foto-desktop{
     width: 50%;
-    height: 30%;
+    height: 40%;
     border-radius: 50%;
 }
 
